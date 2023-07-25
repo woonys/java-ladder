@@ -29,7 +29,7 @@ public class StreamStudy {
              .sorted(Comparator.reverseOrder())
              .distinct()
              .limit(100)
-             .forEach(System.out::println);
+             .forEach(word -> System.out.println(word.toLowerCase()));
     }
 
     public static List<Integer> doubleNumbers(List<Integer> numbers) {
